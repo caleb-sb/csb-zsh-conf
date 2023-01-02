@@ -1,9 +1,10 @@
 # Maintainer: Caleb Bredekamp
 pkgname=csb-zsh-conf-git
 _pkgname=csb-zsh-conf
-pkgver=v0.0.1.r1.g03dfc44
+pkgver=v0.0.1.r0.ge9f9138
 pkgrel=1
 _destname1="/etc/skel/"
+_destname2="/etc/skel/.oh-my-zsh/"
 pkgdesc="Caleb's zsh configuration"
 arch=('any')
 url="https://github.com/caleb-sb/${_pkgname}.git"
@@ -18,7 +19,8 @@ source=(${_pkgname}::"git+${url}")
 sha256sums=('SKIP')
 package() {
 	install -dm 755 ${pkgdir}${_destname1}
-	cp -r ${srcdir}/${_pkgname}/* ${pkgdir}${_destname1}
+	cp -r ${srcdir}/${_pkgname}/.zsh* ${pkgdir}${_destname1}
+	cp -r ${srcdir}/${_pkgname}/.oh-my-zsh/* ${pkgdir}${_destname2}
 }
 pkgver() {
 	cd "$_pkgname"
