@@ -1,7 +1,7 @@
 # Maintainer: Caleb Bredekamp
 pkgname=csb-zsh-conf-git
 _pkgname=csb-zsh-conf
-pkgver=v0.0.1.r4.gb6b54e4
+pkgver=v0.0.1.r5.g60943f8
 pkgrel=1
 _destname1="/etc/skel/"
 pkgdesc="Caleb's zsh configuration"
