@@ -1,10 +1,10 @@
 # Maintainer: Caleb Bredekamp
 pkgname=csb-zsh-conf-git
 _pkgname=csb-zsh-conf
-pkgver=v0.0.1.r9.g50a77ce
+pkgver=v0.0.2.r1.gf991196
 pkgrel=1
 _destname1="/etc/skel/"
-_destname2="/etc/skel/.zsh"
+_destname2="/etc/skel/.zsh/"
 pkgdesc="Caleb's zsh configuration"
 arch=('any')
 url="https://github.com/caleb-sb/${_pkgname}.git"
