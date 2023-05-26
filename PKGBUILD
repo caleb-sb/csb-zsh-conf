@@ -1,7 +1,7 @@
 # Maintainer: Caleb Bredekamp
 pkgname=csb-zsh-conf-git
 _pkgname=csb-zsh-conf
-pkgver=v0.0.2.r1.gf991196
+pkgver=v0.0.2.r2.g6c5718b
 pkgrel=1
 _destname1="/etc/skel/"
 _destname2="/etc/skel/.zsh/"
@@ -21,6 +21,7 @@ package() {
 	install -dm 755 ${pkgdir}${_destname1}
 	install -dm 755 ${pkgdir}${_destname2}
 	cp -r ${srcdir}/${_pkgname}/.zsh* ${pkgdir}${_destname1}
+	cp -r ${srcdir}/${_pkgname}/.zsh* ${pkgdir}${_destname2}
 	cp -r ${srcdir}/${_pkgname}/zsh-autosuggestions ${pkgdir}${_destname2}
 }
 pkgver() {
