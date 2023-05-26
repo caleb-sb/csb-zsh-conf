@@ -1,7 +1,7 @@
 # Maintainer: Caleb Bredekamp
 pkgname=csb-zsh-conf-git
 _pkgname=csb-zsh-conf
-pkgver=v0.0.2.r3.g8d37378
+pkgver=v0.0.2.r4.g03b0aa5
 pkgrel=1
 _destname1="/etc/skel/"
 _destname2="/etc/skel/.zsh/zsh-autosuggestions/"
